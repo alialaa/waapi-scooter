@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Animations API</title>
+    <script type="module" src="index.js"></script>
+
+    <link rel="preload" href="assets/house-1.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/house-2.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/house-3.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/house-4.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/house-5.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/house-6.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/house-7.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/house-8.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/house-9.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/tree-1.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/tree-2.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/tree-3.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/tree-4.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/tree-5.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/tree-6.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/sign-1.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/cloud-1.png" as="image" type="image/png" />
+    <link rel="preload" href="assets/cloud-2.png" as="image" type="image/png" />
+  </head>
+  <body>
+    <div class="sky">
+      <img src="assets/cloud-1.png" class="cloud1" alt="" />
+      <img src="assets/cloud-2.png" class="cloud2" alt="" />
+    </div>
+    <div class="background">
+      <div class="back-houses-wrapper">
+        <div class="houses">
+          <img src="assets/house-5.png" class="house" alt="" />
+          <img src="assets/house-3.png" class="house" alt="" />
+          <img src="assets/house-4.png" class="house" alt="" />
+          <img src="assets/house-9.png" class="house" alt="" />
+          <img src="assets/house-4.png" class="house" alt="" />
+          <img src="assets/house-7.png" class="house" alt="" />
+          <img src="assets/house-8.png" class="house" alt="" />
+        </div>
+      </div>
+      <div class="houses-wrapper">
+        <div class="houses">
+          <img src="assets/house-1.png" class="house" alt="" />
+          <img src="assets/house-2.png" class="house" alt="" />
+          <img src="assets/house-3.png" class="house" alt="" />
+          <img src="assets/house-4.png" class="house" alt="" />
+        </div>
+      </div>
+     
+  
+    </div>
+    <div class="ground">
+      <div class="street">
+        <div class="lines"></div>
+      </div>
+      <div class="shadow"></div>
+    </div>
+
+    <div class="scooter">
+      <div class="backfire">
+        <div class="smoke"></div>
+        <div class="spark"></div>
+      </div>
+      <div class="body"></div>
+      <div class="wheel front"></div>
+      <div class="wheel back"></div>
+    </div>
+
+    <div class="foreground">
+      <img src="assets/sign-1.png" class="sign" alt="" />
+    </div>
+
+    <div id="info">
+      <div class="item">
+        <div class="key space">Space</div>
+        <span>Start/Pause</span>
+      </div>
+      <div class="item">
+        <div class="key">←</div>
+        <span>Brake</span>
+      </div>
+      <div class="item">
+        <div class="key">→</div>
+        <span>Accelerate</span>
+      </div>
+    
+      <div class="item">
+        <div class="key">W</div>
+        <span>Wheelie</span>
+      </div>
+      <div class="item">
+        <div class="key">R</div>
+        <span>Rev</span>
+      </div>
+    </div>
+
+    <div id="speedometer"><span class="speed">0</span>Km/h</div>
+  </body>
+</html>
