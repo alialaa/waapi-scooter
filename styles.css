@@ -41,7 +41,9 @@ body {
   top: 0;
   overflow: hidden;
 }
-.houses, .trees, .back-houses {
+.houses,
+.trees,
+.back-houses {
   position: absolute;
   height: 50vh;
   width: 200%;
@@ -50,7 +52,6 @@ body {
   align-items: flex-end;
   justify-content: space-around;
 }
-
 
 .houses-wrapper .houses .house {
   height: 70%;
@@ -209,10 +210,9 @@ body {
   background-repeat: no-repeat;
 }
 
-
 #speedometer {
   position: absolute;
-  font-family: 'digital';
+  font-family: "digital";
   bottom: 0;
   font-size: 28px;
   z-index: 100;
@@ -252,7 +252,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(1,1,1,0.2);
+  box-shadow: 0 0 2px 2px rgba(1, 1, 1, 0.2);
 }
 #info .item .key.space {
   width: 70px;
