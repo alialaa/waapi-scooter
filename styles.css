@@ -83,11 +83,20 @@ body {
   height: 50vh;
   position: relative;
 }
+/* @keyframes street {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} */
 .ground .street {
   background-image: linear-gradient(#464646, #242424);
   position: absolute;
   width: 200vw;
   height: 100%;
+  /* animation: linear infinite 5s street; */
 }
 .ground .street .lines {
   position: absolute;
