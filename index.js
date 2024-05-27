@@ -1,6 +1,17 @@
 import "./scripts/street.mjs";
 import "./scripts/scooter.mjs";
 import "./scripts/background.mjs";
+import "./scripts/foreground.mjs";
+
+let isPaused = true;
+
+function init() {
+  document.getAnimations().forEach((animation) => {
+    animation.pause();
+  });
+}
+
+init();
 
 function pause() {
   document.getAnimations().forEach((animation) => {
@@ -13,9 +24,22 @@ function play() {
   });
 }
 
+window.addEventListener("keydown", (e) => {
+  if (e.key === " ") {
+    if (isPaused) {
+      play();
+      isPaused = false;
+    } else {
+      pause();
+      isPaused = true;
+    }
+  }
+});
+
 window.addEventListener("blur", () => {
   pause();
 });
 window.addEventListener("focus", () => {
+  if (isPaused) return;
   play();
 });
