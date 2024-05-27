@@ -35,6 +35,7 @@ function animateForeground() {
       duration: streetAnimation.effect.getComputedTiming().duration * 1.4,
     }
   );
+  foregroundAnimation.playbackRate = streetAnimation.playbackRate;
   foregroundAnimation.finished.then(() => {
     randomizeItem();
     animateForeground();

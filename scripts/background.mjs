@@ -34,6 +34,7 @@ function animateHouses(houses, duration, shift) {
       easing: "linear",
     }
   );
+  housesAnimation.playbackRate = streetAnimation.playbackRate;
   housesAnimation.finished.then((e) => {
     randomizeHouses(e.effect.target);
     animateHouses(e.effect.target, duration, true);

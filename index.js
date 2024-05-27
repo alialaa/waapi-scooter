@@ -2,12 +2,16 @@ import "./scripts/street.mjs";
 import "./scripts/scooter.mjs";
 import "./scripts/background.mjs";
 import "./scripts/foreground.mjs";
+import "./scripts/speed.mjs";
 
 let isPaused = true;
 
 function init() {
   document.getAnimations().forEach((animation) => {
     animation.pause();
+    if (animation.animationName !== "vibration") {
+      animation.playbackRate = 0;
+    }
   });
 }
 
