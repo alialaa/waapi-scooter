@@ -3,6 +3,7 @@ import "./scripts/scooter.mjs";
 import "./scripts/background.mjs";
 import "./scripts/foreground.mjs";
 import "./scripts/speed.mjs";
+import "./scripts/wheelie.mjs";
 
 let isPaused = true;
 

@@ -34,7 +34,6 @@ function accelerate() {
 }
 
 function decelerate(rate) {
-  console.log("hhh");
   if (
     streetAnimation.updatePlaybackRate === 0 ||
     streetAnimation.playState !== "running"

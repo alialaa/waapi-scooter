@@ -136,6 +136,7 @@ body {
   margin: auto;
   width: var(--scooter-width);
   aspect-ratio: 1.06842;
+  transform-origin: bottom left;
 }
 .scooter .body {
   background-image: url("./assets/scooter.png");
