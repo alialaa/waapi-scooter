@@ -4,6 +4,7 @@ import "./scripts/background.mjs";
 import "./scripts/foreground.mjs";
 import "./scripts/speed.mjs";
 import "./scripts/wheelie.mjs";
+import "./scripts/rev.mjs";
 import { pauseAllAudio, playAllAudio } from "./scripts/audio.mjs";
 
 let isPaused = true;

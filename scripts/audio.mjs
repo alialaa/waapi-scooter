@@ -26,6 +26,11 @@ export const brakePlayer = new Tone.Player({
   loop: false,
 }).toDestination();
 
+export const backfirePlayer = new Tone.Player({
+  url: "../assets/backfire.mp3",
+  loop: false,
+}).toDestination();
+
 export function playAllAudio() {
   idleEnginePlayer.start();
   enginePlayer.start();
