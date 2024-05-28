@@ -4,6 +4,7 @@ import "./scripts/background.mjs";
 import "./scripts/foreground.mjs";
 import "./scripts/speed.mjs";
 import "./scripts/wheelie.mjs";
+import { pauseAllAudio, playAllAudio } from "./scripts/audio.mjs";
 
 let isPaused = true;
 
@@ -22,11 +23,13 @@ function pause() {
   document.getAnimations().forEach((animation) => {
     animation.pause();
   });
+  pauseAllAudio();
 }
 function play() {
   document.getAnimations().forEach((animation) => {
     animation.play();
   });
+  playAllAudio();
 }
 
 window.addEventListener("keydown", (e) => {
